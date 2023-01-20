@@ -1,0 +1,54 @@
+@media (max-width: 767px)
+{
+    
+    .header__burger{
+        display: block;
+        margin-top: 46px;
+    }
+    .header__nav{
+        display: none;
+    }
+    .heder__logo{
+        margin-top: 40px;
+        
+    }
+    .header__content{
+        width: 367px;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+    .header__top{
+        padding: 0 30px;
+        min-width: 0;
+    }
+    .header__bot{
+        flex-direction: column;
+        padding: 0 10px;
+    }
+    .header__img{
+        max-width: 100%;
+        margin-top: 20px;
+    }
+    .heder__title{
+        font-size: 28px;
+        line-height: 42px;
+        margin-top: 50px;
+    }
+    .heder__sub-title{
+        margin-top: 20px;
+    }
+
+    .info-cards{
+        max-height:none     ;
+        padding: 0 10px;
+
+    }
+    .info-cards__container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio{
+        padding: 0 10px;
+    }
+}

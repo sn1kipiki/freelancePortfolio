@@ -1,0 +1,250 @@
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    font-weight: 400;
+
+}
+
+.header {
+    background-color: #F1F1F1;
+}
+
+.header__top {
+    min-width: 770px;
+    display: flex;
+    justify-content: space-between;
+}
+.heder__logo {
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 46px;
+    position: relative;
+    line-height: 1;
+    padding-bottom: 4px;
+    padding-right: 12px;
+}
+.heder__logo::after{
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #FDA300;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 0;
+    right: 0;
+}
+.header__nav {
+    display: flex;
+    margin-top: 60px;
+    gap: 50px;
+}
+.header__burger{
+    width: 33px;
+    height: 20px;
+    position: relative;
+    display: none;
+}
+.header__burger.active::before{
+   transform: rotate(45deg);
+   top: 8px;
+}
+.header__burger.active::after{
+    transform: rotate(-45deg);
+    bottom: 8px;
+ }
+ .header__burger.active span{
+    transform: scale(0);
+ }
+.header__burger::before{
+    content: "";
+    width: 33px;
+    height: 4px;
+    background-color: #000000;
+    position: absolute;
+    top:0;
+    transition: all 0.3s ease 0s;
+}
+.header__burger::after{
+    content: "";
+    width: 33px;
+    height: 4px;
+    background-color: #000000;
+    position: absolute;
+    bottom:0;
+    transition: all 0.3s ease 0s;
+}
+.header__nav.active {
+    position: fixed;
+    top: -60px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #ffffff;
+    z-index: 10;
+    display: block;
+}
+.header__burger-line{
+    width: 33px;
+    height: 4px;
+    background-color: #000000;
+    position: absolute;
+    top: 8px
+
+}
+
+.header__item {
+    font-size: 14px;
+    font-weight: 500;
+    color: 606060;
+}
+.header__bot {
+    display: flex  ;
+}
+.header__content {
+    max-width: 500px;
+    margin-top: 200px;
+    margin-right: 165px;
+}
+.heder__title {
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 66px;
+}
+.heder__sub-title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.header__img {
+    object-position:right;
+}
+/* ================================================ */
+.main {
+}
+.info-cards {
+   
+    margin-top: 90px;
+    max-height: 228px;
+    
+}
+.info-cards__container{
+    display: flex;
+    gap: 30px;
+
+}
+.info-cards__card {
+    display: flex;
+    flex-direction: column;
+    max-width: 370px;
+   
+    
+}
+.info-cards__img {
+    width: 68px;
+    height: 68px;
+}
+.info-cards__title {
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 24px;
+}
+.info-cards__text {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+}
+/* =============================================== */
+.portfolio {
+    margin-top: 90px;
+    background-color: #F1F1F1;
+    padding-bottom: 90px;
+    
+}
+.portfolio__container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.portfolio__title {
+    margin-top: 90px;
+    font-size: 34px;
+    line-height: 51px;
+    font-weight: 600;
+    
+}
+.portfolio__img {
+    margin-top: 90px;
+}
+.portfolio__img1 {
+    margin-top: 70px;
+}
+.portfolio__link {
+    margin-top: 40px;
+    text-decoration-line: underline;
+}
+/* ==================================================== */
+.contacts {
+    margin-top: 90px;
+   
+}
+.contacts__container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+   
+    max-width: 430px;
+}
+.contacts__title {
+    font-size: 34px;
+    line-height: 51px;
+    font-weight: 600;
+}
+.contacts__text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.contacts__button {
+    padding: 8px 23px;
+    background-color: #070707;
+    color: #fff;
+    border-radius: 50px;
+    margin-top: 40px;
+}
+.contacts__img-block {
+    display: flex;
+    gap: 60px;
+    margin-top: 80px;
+}
+.contacts__img {
+   width: 100%;
+   height: 100%;
+}
+.contacts__link {
+    width: 40px;
+    height: 40px;
+}
+.contacts__description {
+    margin-top: 40px;
+    font-size: 14px;
+    font-weight: 400px;
+    text-align: center;
+    line-height: 21px;
+    
+}
+.footer {
+    margin-top: 90px;
+}
